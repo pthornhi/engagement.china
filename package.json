@@ -15,5 +15,25 @@
   "bugs": {
     "url": "https://github.com/pthornhi/engagement.china/issues"
   },
-  "homepage": "https://github.com/pthornhi/engagement.china"
+  "homepage": "https://github.com/pthornhi/engagement.china",
+  "devDependencies": {
+    "compass": "^0.1.1",
+    "connect": "^3.4.0",
+    "gulp": "^3.9.0",
+    "gulp-browserify": "^0.5.1",
+    "gulp-compass": "^2.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-if": "^1.2.5",
+    "gulp-jshint": "^1.11.0",
+    "gulp-minify-html": "^1.0.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.1",
+    "gulp-uglify": "^1.2.0",
+    "gulp-util": "^3.0.6",
+    "gulp-w3cjs": "^1.0.0",
+    "jquery": "^2.1.4",
+    "jshint-stylish": "^2.0.1",
+    "path": "^0.11.14"
+  }
 }
