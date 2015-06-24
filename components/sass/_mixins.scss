@@ -1,0 +1,92 @@
+@mixin font($font, $style: normal, $weight: normal) {
+    font-family: $font;
+    font-style:  $style;
+    font-weight: $weight;
+}
+
+@mixin backImage(
+  $image,
+  $grDir: to bottom,
+  $opStart: 0,
+  $opEnd: 0,
+  $bgPos: center center
+  ) {
+  background: linear-gradient(
+    $grDir,
+    rgba(0,0,0, $opStart),
+    rgba(0,0,0, $opEnd)
+  ),url($image);
+  background-repeat: no-repeat;
+  background-position: $bgPos; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} //backImage
+
+
+@mixin clearfix {
+  &:before,
+  &:after {
+    content: '';
+    display: table;
+  } //before, after
+  &:after {
+    clear: both;
+  } //after
+} //clearfix
+
+@mixin large-text {
+  font: {
+    family: Arial;
+    size: 20px;
+    weight: bold;
+  }
+  color: $orange;
+}
+
+
+@mixin vertical-align {
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin nav-vertical-align {
+    position: relative;
+    top: 40%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@mixin box-sizing($box-model: $default-box-sizing) {
+	@if type-of($box-model) == string {
+		$box-model: unquote($box-model);
+	}
+	@include prefixed-properties(css3-boxsizing, $box-sizing-support-threshold, (box-sizing: $box-model));
+}
+
+@mixin navlogo{
+	width: 165px;
+	height: 204px;
+	background: url('/css/images/nav-logo.png') 0 0 no-repeat transparent;
+	position: absolute;
+	a{
+		display: block;
+		height: 165px;
+		width: 204px;
+	}
+}
+
+@mixin list-link-icon{
+	display: inline-block;
+	height: 14px;
+	width: 14px;
+	background: url('images/list-link-icon.png') 0 0 no-repeat transparent;
+	margin-right: 2px;
+    position: relative;
+    top: 2px;
+}

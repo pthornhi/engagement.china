@@ -1,0 +1,59 @@
+
+.homepage .sticky {
+	position: fixed;
+    bottom: 0;
+    z-index: 2;
+    width: 100%;
+}
+body #home.page{
+	padding: 0;
+	max-width: 100%;
+	.content{
+		max-width: 100%;
+		width: 100%;
+		float: left;
+	}
+}
+.home#greyheadbar{
+	#searchbox {
+		top: 0;
+		position: relative;
+	}
+}
+// RESPONSIVE LAYOUT --------------------------------------------------------------
+.home#greyheadbar{
+	.layout{
+		@include breakpoint($mobile-portrait){
+			.homepage .sticky {
+				position: relative;
+			    bottom: 0;
+			    z-index: 2;
+			    width: 100%;
+			}
+		}
+		@include breakpoint($mobile-landscape){
+			#searchbox{
+				top: -135px;
+			}
+			.homepage .sticky {
+				position: relative;
+			    bottom: 0;
+			    z-index: 2;
+			    width: 100%;
+			}
+		}
+		@include breakpoint($tablet){  //tablet
+			#searchbox{
+				
+			}
+		}
+		@include breakpoint($desktop){
+			.homepage .sticky {
+				position: relative;
+			    bottom: 0;
+			    z-index: 2;
+			    width: 100%;
+			}
+		}
+	}
+}

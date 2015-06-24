@@ -1,0 +1,39 @@
+@each $font-face in "Museo300", "Museo-500", "MuseoSans300", "MuseoSans300Italic", "MuseoSans500", "MuseoSans500Italic", "MuseoSlab700"{
+    @font-face {
+          font-family: $font-face; font-style: normal; font-weight: normal;
+          src: url('/fonts/webfonts/#{$font-face}.eot');
+          src: url('/fonts/webfonts/#{$font-face}.eot?') format('eot'),
+               url('/fonts/webfonts/#{$font-face}.woff') format('woff'),
+               url('/fonts/webfonts/#{$font-face}.ttf')  format('truetype');
+    }
+}
+@import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
+@include border-box-sizing;
+
+head:before{content: none !important;}
+body {font-family:$font-greybody-text;color:$primary-text;font-size: 16px;line-height: 160%;margin:0 auto;overflow-x: hidden;background: $bodyBackground;}
+body main#container{z-index: 0;}
+body main#container .page{z-index: 0;}
+body .page{@include clearfix;position: relative;}
+body #wrapper {position: relative;z-index: 10;top: -8px;left: 0;overflow: hidden;}
+body .content{position: relative;max-width: 1200px; margin: 0 auto;}
+body a, body a:visited{color: $link-blue;text-decoration: none;}
+.page{background: $pageBackground;}
+#sticky-wrapper{height: 0 !important;}
+img{width: 100%;}
+#page-title{color: $orange;}
+#{headings(1)}{font-family: $font-secondarypage-head-text;font-size: 35px;margin: 40px 0;line-height: 39px;}
+#{headings(2,2)}{font-family: $font-secondarypage-head-text;font-size: 23px;margin: 0 0 20px 0;}
+#{headings(3,5)}{font-family: $font-secondarypage-head-text;font-size: 18px;}
+strong {}
+
+p { }
+#title-container{
+	@include clearfix;
+	  position: relative;
+	  max-width: 1200px;
+	  margin: 0 auto;	
+	#page-title {position: relative;left: -5px;}
+}
+
+.list-links li a .icon{ @include list-link-icon;}

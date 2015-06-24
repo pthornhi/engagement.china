@@ -1,0 +1,98 @@
+// desktop layout ---------------------------------------------------------------------------
+#greyheadbar{
+	@include clearfix;
+	height: auto;
+	width: 	100%;
+	position: relative;
+	z-index: 11;
+}
+nav{
+	width: 100%;
+	position: relative;
+	//top: 0px;
+	z-index: 12;
+	display: inline-block;
+	@include clearfix;
+}
+nav.home{
+	top: 0;
+}
+.left-col {
+	float: left;
+	width: 30%;
+	img {
+		width: 80%;
+	}
+}
+.right-col {
+	float: left;
+	width: 70%;
+	text-align: left;
+	.for-mobile{
+		display: none;
+	}
+}
+
+// Repsonsive layout ---------------------------------------------------------------------------
+body #wrapper {
+	@include breakpoint($mobile-portrait){
+
+	}
+	.page{
+		margin: -15px auto 0 auto;
+		padding: 0 5%;
+		.layout {
+			@include container;
+			padding: 0 6% ;
+			@include breakpoint(0px $mobile){
+				@include span(12 of 12);
+				.left-col{
+					@include span(12 of 12 first);
+					img{
+						
+					}
+					&.for-desktop{
+						display: none;
+					}
+				}
+				.right-col {
+					@include span(12 of 12 last);
+					//color: $purple !important;
+					.for-mobile{
+						display: block;
+						width: 30%;
+						float: left;
+						margin-right: 5%;
+					}
+				}
+			}
+		}
+		@include breakpoint($desktop){
+			.left-col{
+			}
+			.right-col {
+				//color: $yellow !important;
+			}
+	
+		}
+		@include breakpoint($max-width){
+			.left-col{
+	
+			}
+			.right-col {
+				//color: $orange !important;
+			}
+	
+		}
+	}
+}
+#imagebanner{
+	.layout {
+		padding: 0;
+	}
+}
+#home.page {
+	.layout {
+		padding: 0;
+	}
+}

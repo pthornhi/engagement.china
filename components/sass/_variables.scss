@@ -1,0 +1,64 @@
+//Add Color Palette
+$blue: #15284a;
+$green: #45B29D;
+$yellow: #EFC94C;
+$orange: #e84b38;
+$red: #DF4848;
+$pink: #CD0069;
+$purple: #6C71C4;
+$dark: #000000;
+$light: #e8e9ea;
+$grey: #c6c8ca;
+$primary-text: lighten(#000000, 20);
+$lighter-text: lighten(#000000, 40);
+
+$bodyBackground: #ffffff;
+$pageBackground: #ffffff;
+$typeDefault : $dark;
+$navBackground : $blue;
+$navForeground : $light;
+$navHover : $yellow;
+$navBrandBg : $red;
+$headersubbg : $dark;
+$default-border-radius: 25px;
+
+$link-blue: #004c87;
+
+$font-greybody-text: MuseoSans300, serif;
+$font-bluelink-text: MuseoSans300, serif;
+$font-white-navigation: MuseoSans500, serif;
+$font-heavy-text: MuseoSans700, serif;
+$font-banner-text: Museo-500, serif;
+$font-secondarypage-head-text: Museo-500, serif;
+$font-orange-date: Museo-500, serif;
+$font-grey-title: Museo-500, serif;
+$font-large-numbers: Museo-500, serif;
+$font-blue-location: Museo-500, serif;
+
+$greybarheight: 75px;
+// ------------------------------- LAYOUT VARIABLES ------------------------------- //
+// Susy SETUP ---------------------------------------------------------------------------
+$max-pagesize: 3000px;
+$total-columns: 12;
+$column-width: 6em;
+$gutter-width: .25;
+$grid-padding: $gutter-width;
+$page-pad: 5%;
+
+$susy: (
+	container: $max-pagesize,
+	columns: $total-columns,
+	gutters: $gutter-width,
+	math: fluid,
+	output: float,
+	gutter-position: inside);	
+
+$mini: 0 320px;
+$mobile: 700px;
+$mobile-portrait: 0px 530px;
+$mobile-landscape: 530px 700px;
+$tablet: 700px 800px;
+$desktop: 800px 1200px;
+$superdesktop: 1200px 1600px;
+$blowout: 1600px 3200px;
+$max-width: 1200px;
