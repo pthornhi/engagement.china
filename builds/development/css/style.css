@@ -59,50 +59,50 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-family: "Museo300";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/webfonts/Museo300.eot");
-  src: url("/fonts/webfonts/Museo300.eot?") format("eot"), url("/fonts/webfonts/Museo300.woff") format("woff"), url("/fonts/webfonts/Museo300.ttf") format("truetype");
+  src: url("./fonts/webfonts/Museo300.eot");
+  src: url("./fonts/webfonts/Museo300.eot?") format("eot"), url("./fonts/webfonts/Museo300.woff") format("woff"), url("./fonts/webfonts/Museo300.ttf") format("truetype");
 }
 @font-face {
   font-family: "Museo-500";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/webfonts/Museo-500.eot");
-  src: url("/fonts/webfonts/Museo-500.eot?") format("eot"), url("/fonts/webfonts/Museo-500.woff") format("woff"), url("/fonts/webfonts/Museo-500.ttf") format("truetype");
+  src: url("./fonts/webfonts/Museo-500.eot");
+  src: url("./fonts/webfonts/Museo-500.eot?") format("eot"), url("./fonts/webfonts/Museo-500.woff") format("woff"), url("./fonts/webfonts/Museo-500.ttf") format("truetype");
 }
 @font-face {
   font-family: "MuseoSans300";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/webfonts/MuseoSans300.eot");
-  src: url("/fonts/webfonts/MuseoSans300.eot?") format("eot"), url("/fonts/webfonts/MuseoSans300.woff") format("woff"), url("/fonts/webfonts/MuseoSans300.ttf") format("truetype");
+  src: url("./fonts/webfonts/MuseoSans300.eot");
+  src: url("./fonts/webfonts/MuseoSans300.eot?") format("eot"), url("./fonts/webfonts/MuseoSans300.woff") format("woff"), url("./fonts/webfonts/MuseoSans300.ttf") format("truetype");
 }
 @font-face {
   font-family: "MuseoSans300Italic";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/webfonts/MuseoSans300Italic.eot");
-  src: url("/fonts/webfonts/MuseoSans300Italic.eot?") format("eot"), url("/fonts/webfonts/MuseoSans300Italic.woff") format("woff"), url("/fonts/webfonts/MuseoSans300Italic.ttf") format("truetype");
+  src: url("./fonts/webfonts/MuseoSans300Italic.eot");
+  src: url("./fonts/webfonts/MuseoSans300Italic.eot?") format("eot"), url("./fonts/webfonts/MuseoSans300Italic.woff") format("woff"), url("./fonts/webfonts/MuseoSans300Italic.ttf") format("truetype");
 }
 @font-face {
   font-family: "MuseoSans500";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/webfonts/MuseoSans500.eot");
-  src: url("/fonts/webfonts/MuseoSans500.eot?") format("eot"), url("/fonts/webfonts/MuseoSans500.woff") format("woff"), url("/fonts/webfonts/MuseoSans500.ttf") format("truetype");
+  src: url("./fonts/webfonts/MuseoSans500.eot");
+  src: url("./fonts/webfonts/MuseoSans500.eot?") format("eot"), url("./fonts/webfonts/MuseoSans500.woff") format("woff"), url("./fonts/webfonts/MuseoSans500.ttf") format("truetype");
 }
 @font-face {
   font-family: "MuseoSans500Italic";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/webfonts/MuseoSans500Italic.eot");
-  src: url("/fonts/webfonts/MuseoSans500Italic.eot?") format("eot"), url("/fonts/webfonts/MuseoSans500Italic.woff") format("woff"), url("/fonts/webfonts/MuseoSans500Italic.ttf") format("truetype");
+  src: url("./fonts/webfonts/MuseoSans500Italic.eot");
+  src: url("./fonts/webfonts/MuseoSans500Italic.eot?") format("eot"), url("./fonts/webfonts/MuseoSans500Italic.woff") format("woff"), url("./fonts/webfonts/MuseoSans500Italic.ttf") format("truetype");
 }
 @font-face {
   font-family: "MuseoSlab700";
   font-style: normal;
   font-weight: normal;
-  src: url("/fonts/webfonts/MuseoSlab700.eot");
-  src: url("/fonts/webfonts/MuseoSlab700.eot?") format("eot"), url("/fonts/webfonts/MuseoSlab700.woff") format("woff"), url("/fonts/webfonts/MuseoSlab700.ttf") format("truetype");
+  src: url("./fonts/webfonts/MuseoSlab700.eot");
+  src: url("./fonts/webfonts/MuseoSlab700.eot?") format("eot"), url("./fonts/webfonts/MuseoSlab700.woff") format("woff"), url("./fonts/webfonts/MuseoSlab700.ttf") format("truetype");
 }
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -121,7 +121,6 @@ body {
   line-height: 160%;
   margin: 0 auto;
   overflow-x: hidden;
-  background: #ffffff;
 }
 
 body main#container {
@@ -175,7 +174,7 @@ img {
 }
 
 #page-title {
-  color: #e84b38;
+  color: #fa6300;
 }
 
 h1 {
@@ -325,9 +324,52 @@ body #wrapper .page .layout:after {
   padding: 0;
 }
 
+body.wireframe .frame-element {
+  border: 1px solid #cccccc;
+}
+
+header {
+  max-height: 192px;
+}
+header #headbar {
+  height: 100%;
+  position: relative;
+}
+header #headbar #orange-stripe {
+  background: #fa6300;
+}
+header #headbar #orange-stripe:before, header #headbar #orange-stripe:after {
+  content: '';
+  display: table;
+}
+header #headbar #orange-stripe:after {
+  clear: both;
+}
+header #headbar #orange-stripe #logo-container {
+  max-width: 813px;
+  min-width: 600px;
+  float: left;
+  margin-left: 3%;
+}
+header #headbar #orange-stripe #donate {
+  float: left;
+}
+header #headbar #orange-stripe #searchbox {
+  float: left;
+}
+header #headbar #pattern-stripe {
+  height: auto;
+  position: absolute;
+  bottom: 0;
+  line-height: 0;
+}
+header #headbar #pattern-stripe img {
+  min-width: 700px;
+}
+
 nav {
   font-family: MuseoSans500, serif;
-  background: #15284a;
+  background: #16274c;
 }
 nav .layout {
   padding: 0 5%;
@@ -369,7 +411,7 @@ nav .layout .navlist .nav-item a {
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
-  color: #e8e9ea;
+  color: #ffffff;
   text-decoration: none;
   font-size: 2vw;
 }
@@ -447,7 +489,7 @@ nav .layout .logo-item:after {
 nav.slide-menu {
   position: fixed;
   z-index: 20;
-  background-color: #15284a;
+  background-color: #16274c;
   overflow: hidden;
   -moz-transition-duration: 0.75s;
   -o-transition-duration: 0.75s;
@@ -637,7 +679,7 @@ body.pmt-open button.close-menu {
 }
 #home .content .caption {
   font-size: 86px !important;
-  color: #e8e9ea;
+  color: #ffffff;
   position: absolute;
   font-family: Museo-500, serif;
   text-shadow: #000000 2px 2px 8px;
@@ -1068,3 +1110,5 @@ body #home.page .content {
     width: 100%;
   }
 }
+
+/*# sourceMappingURL=style.css.map */

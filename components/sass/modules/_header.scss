@@ -1,0 +1,36 @@
+$header-height:192px;
+header{
+	max-height: $header-height;
+	#headbar{
+		height: 100%;
+		position: relative;
+		#orange-stripe{
+			@include clearfix;
+			background: $orange;
+			#logo-container{
+				max-width: 813px;
+				min-width: 600px;
+				float: left;
+				margin-left: 3%;
+			}
+			#donate {
+				float: left;
+			}
+			#searchbox {
+				float: left;
+			}
+		}
+		#pattern-stripe{
+			height: auto;
+			position: absolute;
+			bottom: 0;
+			line-height: 0;
+			img {
+				min-width: 700px;
+			}
+		}
+	}
+}
+nav{
+	
+}

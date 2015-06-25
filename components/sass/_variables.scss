@@ -1,26 +1,21 @@
 //Add Color Palette
-$blue: #15284a;
-$green: #45B29D;
-$yellow: #EFC94C;
-$orange: #e84b38;
-$red: #DF4848;
-$pink: #CD0069;
-$purple: #6C71C4;
+$orange: #fa6300;
+$blue: #16274c;
+$header_blue: #1f3f79;
 $dark: #000000;
-$light: #e8e9ea;
-$grey: #c6c8ca;
-$primary-text: lighten(#000000, 20);
-$lighter-text: lighten(#000000, 40);
+$light: #ffffff;
+$primary-text: lighten($dark, 20);
+$lighter-text: lighten($dark, 40);
+$light-grey: lighten($dark, 90);
+
+$navBackground : $blue;
+
+
 
 $bodyBackground: #ffffff;
 $pageBackground: #ffffff;
 $typeDefault : $dark;
-$navBackground : $blue;
-$navForeground : $light;
-$navHover : $yellow;
-$navBrandBg : $red;
-$headersubbg : $dark;
-$default-border-radius: 25px;
+
 
 $link-blue: #004c87;
 

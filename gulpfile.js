@@ -31,6 +31,9 @@ if (env==='development') {
 
 jsSources = [
   //'components/scripts/jqloader.js',
+  'components/scripts/jquery/jquery.min.js',
+  'components/scripts/jquery/jquery.easing.js',
+  'components/scripts/jquery/plugins/*.js',
   'components/scripts/script.js'
 ];
 sassSources = ['components/sass/style.scss'];
@@ -45,7 +48,6 @@ gulp.task('js', function() {
 
   gulp.src(jsSources)
     .pipe(concat('script.js'))
-    .pipe(browserify())
     .on('error', gutil.log)
     .pipe(gulpif(env === 'production', uglify()))
     .pipe(gulp.dest(outputDir + 'js'))
@@ -60,7 +62,9 @@ gulp.task('compass', function() {
       css: outputDir + 'css',
       image: outputDir + 'images',
       style: sassStyle,
-      require: ['susy', 'breakpoint']
+      require: ['susy', 'breakpoint'],
+      debug: false,
+      sourcemap: true
     })
     .on('error', gutil.log))
 //    .pipe(gulp.dest( outputDir + 'css'))

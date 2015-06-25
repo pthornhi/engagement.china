@@ -8,6 +8,7 @@
 @import "compass/layout/stretching";
 @import "compass/css3/font-face";
 @import "compass/css3/flexbox";
+@import "compass/css3/images";
 
 
 //External Libraries
@@ -22,6 +23,8 @@
 	
 
 //Import Modules
+@import "modules/wireframe";
+@import "modules/header";
 @import "modules/navigation";
 @import "modules/slideshow";
 @import "modules/imagebanner";
