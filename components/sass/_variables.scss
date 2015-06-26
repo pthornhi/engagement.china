@@ -19,18 +19,12 @@ $typeDefault : $dark;
 
 $link-blue: #004c87;
 
-$font-greybody-text: MuseoSans300, serif;
-$font-bluelink-text: MuseoSans300, serif;
-$font-white-navigation: MuseoSans500, serif;
-$font-heavy-text: MuseoSans700, serif;
-$font-banner-text: Museo-500, serif;
-$font-secondarypage-head-text: Museo-500, serif;
-$font-orange-date: Museo-500, serif;
-$font-grey-title: Museo-500, serif;
-$font-large-numbers: Museo-500, serif;
-$font-blue-location: Museo-500, serif;
+$navigation-linkfont: OpenSans, serif;
+$font-greybody-text: OpenSans, serif;
+$font-secondarypage-head-text: OpenSans-Bold, serif;
+$font-banner-text: OpenSans, serif;
 
-$greybarheight: 75px;
+
 // ------------------------------- LAYOUT VARIABLES ------------------------------- //
 // Susy SETUP ---------------------------------------------------------------------------
 $max-pagesize: 3000px;

@@ -1,4 +1,4 @@
-@each $font-face in "Museo300", "Museo-500", "MuseoSans300", "MuseoSans300Italic", "MuseoSans500", "MuseoSans500Italic", "MuseoSlab700"{
+@each $font-face in "EBGaramond", "OpenSans", "OpenSans-Bold", "OpenSans-BoldItalic", "OpenSans-Italic"{
     @font-face {
           font-family: $font-face; font-style: normal; font-weight: normal;
           src: url('./fonts/webfonts/#{$font-face}.eot');

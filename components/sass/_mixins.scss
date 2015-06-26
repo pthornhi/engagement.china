@@ -69,6 +69,39 @@
 	@include prefixed-properties(css3-boxsizing, $box-sizing-support-threshold, (box-sizing: $box-model));
 }
 
+@mixin google-search {
+		width: 180px;
+		#___gcse_0{
+			height: 25px;
+		}
+		.gsc-control-cse {
+		     padding: 0 !important;
+		     border: none;
+		     form.gsc-search-box {
+			    font-size: 13px;
+			    margin: 0;
+			    max-width: 178px;
+			    position: absolute;
+			    width: 100%;
+			}
+		}
+		.gsc-search-box {
+			.gsib_a{padding: 0;}
+		}
+		.gsc-search-button input.gsc-search-button-v2 {
+		    padding: 6px 5px !important;
+		    width: 25px !important;
+		    position: relative  !important;
+		    left: -3px  !important;
+		    height: 25px !important;
+		    top: 3px;
+		}
+		
+		.gsc-search-box-tools .gsc-search-box .gsc-input {
+		    padding-right: 0 !important;
+		}
+}
+
 @mixin navlogo{
 	width: 165px;
 	height: 204px;

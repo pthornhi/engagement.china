@@ -56,53 +56,39 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 }
 
 @font-face {
-  font-family: "Museo300";
+  font-family: "EBGaramond";
   font-style: normal;
   font-weight: normal;
-  src: url("./fonts/webfonts/Museo300.eot");
-  src: url("./fonts/webfonts/Museo300.eot?") format("eot"), url("./fonts/webfonts/Museo300.woff") format("woff"), url("./fonts/webfonts/Museo300.ttf") format("truetype");
+  src: url("./fonts/webfonts/EBGaramond.eot");
+  src: url("./fonts/webfonts/EBGaramond.eot?") format("eot"), url("./fonts/webfonts/EBGaramond.woff") format("woff"), url("./fonts/webfonts/EBGaramond.ttf") format("truetype");
 }
 @font-face {
-  font-family: "Museo-500";
+  font-family: "OpenSans";
   font-style: normal;
   font-weight: normal;
-  src: url("./fonts/webfonts/Museo-500.eot");
-  src: url("./fonts/webfonts/Museo-500.eot?") format("eot"), url("./fonts/webfonts/Museo-500.woff") format("woff"), url("./fonts/webfonts/Museo-500.ttf") format("truetype");
+  src: url("./fonts/webfonts/OpenSans.eot");
+  src: url("./fonts/webfonts/OpenSans.eot?") format("eot"), url("./fonts/webfonts/OpenSans.woff") format("woff"), url("./fonts/webfonts/OpenSans.ttf") format("truetype");
 }
 @font-face {
-  font-family: "MuseoSans300";
+  font-family: "OpenSans-Bold";
   font-style: normal;
   font-weight: normal;
-  src: url("./fonts/webfonts/MuseoSans300.eot");
-  src: url("./fonts/webfonts/MuseoSans300.eot?") format("eot"), url("./fonts/webfonts/MuseoSans300.woff") format("woff"), url("./fonts/webfonts/MuseoSans300.ttf") format("truetype");
+  src: url("./fonts/webfonts/OpenSans-Bold.eot");
+  src: url("./fonts/webfonts/OpenSans-Bold.eot?") format("eot"), url("./fonts/webfonts/OpenSans-Bold.woff") format("woff"), url("./fonts/webfonts/OpenSans-Bold.ttf") format("truetype");
 }
 @font-face {
-  font-family: "MuseoSans300Italic";
+  font-family: "OpenSans-BoldItalic";
   font-style: normal;
   font-weight: normal;
-  src: url("./fonts/webfonts/MuseoSans300Italic.eot");
-  src: url("./fonts/webfonts/MuseoSans300Italic.eot?") format("eot"), url("./fonts/webfonts/MuseoSans300Italic.woff") format("woff"), url("./fonts/webfonts/MuseoSans300Italic.ttf") format("truetype");
+  src: url("./fonts/webfonts/OpenSans-BoldItalic.eot");
+  src: url("./fonts/webfonts/OpenSans-BoldItalic.eot?") format("eot"), url("./fonts/webfonts/OpenSans-BoldItalic.woff") format("woff"), url("./fonts/webfonts/OpenSans-BoldItalic.ttf") format("truetype");
 }
 @font-face {
-  font-family: "MuseoSans500";
+  font-family: "OpenSans-Italic";
   font-style: normal;
   font-weight: normal;
-  src: url("./fonts/webfonts/MuseoSans500.eot");
-  src: url("./fonts/webfonts/MuseoSans500.eot?") format("eot"), url("./fonts/webfonts/MuseoSans500.woff") format("woff"), url("./fonts/webfonts/MuseoSans500.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MuseoSans500Italic";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./fonts/webfonts/MuseoSans500Italic.eot");
-  src: url("./fonts/webfonts/MuseoSans500Italic.eot?") format("eot"), url("./fonts/webfonts/MuseoSans500Italic.woff") format("woff"), url("./fonts/webfonts/MuseoSans500Italic.ttf") format("truetype");
-}
-@font-face {
-  font-family: "MuseoSlab700";
-  font-style: normal;
-  font-weight: normal;
-  src: url("./fonts/webfonts/MuseoSlab700.eot");
-  src: url("./fonts/webfonts/MuseoSlab700.eot?") format("eot"), url("./fonts/webfonts/MuseoSlab700.woff") format("woff"), url("./fonts/webfonts/MuseoSlab700.ttf") format("truetype");
+  src: url("./fonts/webfonts/OpenSans-Italic.eot");
+  src: url("./fonts/webfonts/OpenSans-Italic.eot?") format("eot"), url("./fonts/webfonts/OpenSans-Italic.woff") format("woff"), url("./fonts/webfonts/OpenSans-Italic.ttf") format("truetype");
 }
 *, *:before, *:after {
   -moz-box-sizing: border-box;
@@ -115,7 +101,7 @@ head:before {
 }
 
 body {
-  font-family: MuseoSans300, serif;
+  font-family: OpenSans, serif;
   color: #333333;
   font-size: 16px;
   line-height: 160%;
@@ -178,20 +164,20 @@ img {
 }
 
 h1 {
-  font-family: Museo-500, serif;
+  font-family: OpenSans-Bold, serif;
   font-size: 35px;
   margin: 40px 0;
   line-height: 39px;
 }
 
 h2 {
-  font-family: Museo-500, serif;
+  font-family: OpenSans-Bold, serif;
   font-size: 23px;
   margin: 0 0 20px 0;
 }
 
 h3, h4, h5 {
-  font-family: Museo-500, serif;
+  font-family: OpenSans-Bold, serif;
   font-size: 18px;
 }
 
@@ -347,15 +333,55 @@ header #headbar #orange-stripe:after {
 }
 header #headbar #orange-stripe #logo-container {
   max-width: 813px;
-  min-width: 600px;
+  min-width: 450px;
   float: left;
   margin-left: 3%;
 }
-header #headbar #orange-stripe #donate {
+header #headbar #orange-stripe #search-donate {
+  -moz-transition: all 3s;
+  -o-transition: all 3s;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+  height: 25px;
+  margin-top: 75px;
+  position: absolute;
+  left: 70%;
+  width: 300px;
+}
+header #headbar #orange-stripe #search-donate #donate {
   float: left;
 }
-header #headbar #orange-stripe #searchbox {
-  float: left;
+header #headbar #orange-stripe #search-donate #searchbox {
+  width: 180px;
+  float: right;
+}
+header #headbar #orange-stripe #search-donate #searchbox #___gcse_0 {
+  height: 25px;
+}
+header #headbar #orange-stripe #search-donate #searchbox .gsc-control-cse {
+  padding: 0 !important;
+  border: none;
+}
+header #headbar #orange-stripe #search-donate #searchbox .gsc-control-cse form.gsc-search-box {
+  font-size: 13px;
+  margin: 0;
+  max-width: 178px;
+  position: absolute;
+  width: 100%;
+}
+header #headbar #orange-stripe #search-donate #searchbox .gsc-search-box .gsib_a {
+  padding: 0;
+}
+header #headbar #orange-stripe #search-donate #searchbox .gsc-search-button input.gsc-search-button-v2 {
+  padding: 6px 5px !important;
+  width: 25px !important;
+  position: relative  !important;
+  left: -3px  !important;
+  height: 25px !important;
+  top: 3px;
+}
+header #headbar #orange-stripe #search-donate #searchbox .gsc-search-box-tools .gsc-search-box .gsc-input {
+  padding-right: 0 !important;
 }
 header #headbar #pattern-stripe {
   height: auto;
@@ -367,8 +393,26 @@ header #headbar #pattern-stripe img {
   min-width: 700px;
 }
 
+/*-----------------------------------------------------------------
+	RESPONSIVE BREAKPOINTS BELOW
+-----------------------------------------------------------------*/
+@media (min-width: 0) and (max-width: 920px) {
+  header #headbar #orange-stripe #search-donate {
+    left: 15px;
+    margin-top: 6px;
+    width: 100%;
+  }
+  header #headbar #orange-stripe #search-donate #donate {
+    float: left;
+  }
+  header #headbar #orange-stripe #search-donate #searchbox {
+    float: right;
+    margin-right: 5%;
+  }
+}
+
 nav {
-  font-family: MuseoSans500, serif;
+  font-family: OpenSans, serif;
   background: #16274c;
 }
 nav .layout {
@@ -532,7 +576,7 @@ nav.slide-menu ul li.mobile-icon {
   border-bottom: none;
 }
 nav.push-menu-top {
-  top: 75px;
+  top: 192px;
   height: 88px;
   position: absolute;
 }
@@ -548,7 +592,7 @@ nav.slide-menu-bottom button.close-menu, nav.push-menu-top button.close-menu {
 }
 
 body.pmt-open nav.push-menu-top {
-  top: 75px;
+  top: 192px;
 }
 
 body.smb-open nav.slide-menu-bottom {
@@ -681,7 +725,7 @@ body.pmt-open button.close-menu {
   font-size: 86px !important;
   color: #ffffff;
   position: absolute;
-  font-family: Museo-500, serif;
+  font-family: OpenSans, serif;
   text-shadow: #000000 2px 2px 8px;
   margin: -30% 0 0;
   line-height: 65px;

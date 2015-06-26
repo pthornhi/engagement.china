@@ -1,5 +1,5 @@
 nav{
-	font-family: $font-white-navigation;
+	font-family: $navigation-linkfont;
 	background: $blue;
 	.layout{
 		padding: 0 $page-pad;
@@ -145,7 +145,7 @@ nav {
 		}
 	}
 	&.push-menu-top {
-	    top: $greybarheight;
+	    top: $header-height;
 	    height: 88px;
 	    position: absolute;
 	}
@@ -164,7 +164,7 @@ nav {
 
 
 body.pmt-open nav.push-menu-top {
-    top: $greybarheight;
+    top: $header-height;
 }
 body.smb-open nav.slide-menu-bottom{
     bottom: 0;

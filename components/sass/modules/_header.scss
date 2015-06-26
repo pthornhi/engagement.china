@@ -9,15 +9,24 @@ header{
 			background: $orange;
 			#logo-container{
 				max-width: 813px;
-				min-width: 600px;
+				min-width: 450px;
 				float: left;
 				margin-left: 3%;
 			}
-			#donate {
-				float: left;
-			}
-			#searchbox {
-				float: left;
+			#search-donate{
+				@include transition(all 3s);
+				height: 25px;
+				margin-top: 75px;
+				position: absolute;
+				left: 70%;
+				width: 300px;
+				#donate {
+					float: left;
+				}
+				#searchbox {
+					@include google-search;
+					float: right;
+				}
 			}
 		}
 		#pattern-stripe{
@@ -31,6 +40,31 @@ header{
 		}
 	}
 }
-nav{
-	
+
+/*-----------------------------------------------------------------
+	RESPONSIVE BREAKPOINTS BELOW
+-----------------------------------------------------------------*/
+header{
+	@include breakpoint((0 920px)){
+		#headbar{
+			#orange-stripe{
+				#logo-container{}
+				#search-donate{
+						left: 15px;
+						margin-top: 6px;
+						width: 100%;
+					#donate {
+						float: left;
+					}
+					#searchbox {
+						float: right;
+						margin-right: 5%;
+					}
+				}
+			}
+			#pattern-stripe{
+				img {}
+			}
+		}
+	}
 }
