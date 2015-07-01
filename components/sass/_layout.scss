@@ -1,5 +1,5 @@
 // desktop layout ---------------------------------------------------------------------------
-#greyheadbar{
+#headbar{
 	@include clearfix;
 	height: auto;
 	width: 	100%;
@@ -11,7 +11,7 @@ nav{
 	position: relative;
 	//top: 0px;
 	z-index: 12;
-	display: inline-block;
+	display: block;
 	@include clearfix;
 }
 nav.home{
@@ -33,16 +33,52 @@ nav.home{
 	}
 }
 
-// Repsonsive layout ---------------------------------------------------------------------------
+body {
+	#wrapper {
+		position: relative;
+		z-index: 10;
+		left: 0;
+		.page{
+			@include clearfix;
+			position: relative;
+			z-index: 0;
+			.layout{
+				.content-container {
+					position: relative;
+					margin: 0 auto;
+					#gallery-container{
+						position: relative;
+					}
+					#main-content {
+						max-width: 1390px;
+						margin: 20px auto 7% auto;
+						padding: 0 10%;
+					}
+				}
+			}
+		}
+	}
+	.pattern-stripe{
+		width: 100%;
+		line-height: 0;
+		img {
+			display: block;
+			min-width: 530px;
+		}
+	}
+}
+// ---------------------------------------------------------------------------------------------
+// 										Repsonsive layout 
+// ---------------------------------------------------------------------------------------------
 body #wrapper {
 	@include breakpoint($mobile-portrait){
 
 	}
 	.page{
-		margin: -15px auto 0 auto;
 		padding: 0 5%;
 		.layout {
 			@include container;
+			//margin: -6px auto 0 auto;	
 			padding: 0 6% ;
 			@include breakpoint(0px $mobile){
 				@include span(12 of 12);

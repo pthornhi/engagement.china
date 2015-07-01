@@ -7,22 +7,22 @@
 		<meta name="viewport" content="width=device-width, user-scalable=yes, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 		<script type="text/javascript" src="js/script.js"></script>
 	</head>
-	<body class="wireframe home">
+	<body class="home">
 	    <!-- SLIDE NAVIGATION --> 
 		<nav class="slide-menu slide-menu-bottom">
 		    <ul>
-			    <li class="mobile-icon nav-item"><button class="nav-toggler toggle-slide-bottom"></button><button class="close-menu"></button></li>
-					<li class="nav-item"><a class="icon info" href="timeline.html"><span>ABOUT US</span></a></li>
-					<li class="nav-item"><a class="icon rooms" href="projects.html"><span>SERVICES AND ACTIVITIES</span></a></li>
-					<li class="nav-item"><a class="icon dining" href="events.html"><span>UNIVERSITY PROGRAMS AND ACTIVITIES IN CHINA</span></a></li>
-					<li class="nav-item"><a class="icon events" href="newsletters.html"><span>CURRENT STUDENTS
-AND PARENTS</span></a></li>
-					<li class="nav-item"><a class=" attractions" href="calendar.html"><span>PROSPECTIVE STUDENTS
-AND PARENTS</span></a></li>
-					<li class="nav-item"><a class="icon at<icon></icon>tractions" href="involved.html"><span>UNIVERSITY
-FACULTY/STAFF</span></a></li>
-					<li class="nav-item"><a class="icon at<icon></icon>tractions" href="involved.html"><span>ALUMNI</span></a></li>
-					<li class="nav-item"><a class="icon at<icon></icon>tractions" href="involved.html"><span>COMPANIES</span></a></li>
+				<li class="mobile-icon nav-item"><button class="nav-toggler toggle-slide-bottom"></button><button class="close-menu"></button></li>
+				<li class="nav-item about"><a class="icon" href="timeline.html"><span>ABOUT US</span></a></li>
+				<li class="nav-item services"><a class="icon" href="services.html"><span>SERVICES AND ACTIVITIES</span></a></li>
+				<li class="nav-item programs"><a class="icon" href="programs.html"><span>UNIVERSITY PROGRAMS AND ACTIVITIES IN CHINA</span></a></li>
+				<li class="nav-item current"><a class="icon" href="current.html"><span>CURRENT STUDENTS
+				AND PARENTS</span></a></li>
+				<li class="nav-item prospective"><a class="icon" href="prospective.html"><span>PROSPECTIVE STUDENTS
+				AND PARENTS</span></a></li>
+				<li class="nav-item fac_staff"><a class="icon" href="fac_staff.html"><span>UNIVERSITY
+				FACULTY/STAFF</span></a></li>
+				<li class="nav-item alumni"><a class="icon" href="alumni.html"><span>ALUMNI</span></a></li>
+				<li class="nav-item companies"><a class="icon" href="companies.html"><span>COMPANIES</span></a></li>
 		    </ul>
 		</nav><!-- /push menu bottom -->
 		
@@ -33,7 +33,7 @@ FACULTY/STAFF</span></a></li>
 					<section class="layout">
 						<div id="orange-stripe">
 							<div id="logo-container">
-								<img src="css/images/logo.png" alt="" class="donate-btn" />
+								<a href="/"><img src="css/images/logo.png" alt="" class="logo" /></a>
 							</div>
 							<div id="search-donate">
 								<div id="donate">
@@ -58,8 +58,8 @@ FACULTY/STAFF</span></a></li>
 								</div><!-- searchbox -->
 							</div><!-- search-donate -->
 						</div><!-- orange-stripe -->
-						<div id="pattern-stripe">
-							<img src="css/images/pattern-stripe-bg.jpg">
+						<div class="pattern-stripe">
+							<img src="css/images/pattern-stripe.png">
 						</div>
 					</section><!-- layout -->
 				</div><!-- headbar -->
@@ -68,32 +68,95 @@ FACULTY/STAFF</span></a></li>
 			<nav class="home navbar frame-element">
 			    <section class="layout">
 			        <ul class="navlist">
-					<!-- <li class="mobile-icon nav-item"><button class="nav-toggler toggle-slide-bottom"></button></li> -->
-					<li class="nav-item"><a class="icon info" href="timeline.html"><span>ABOUT US</span></a></li>
-					<li class="nav-item"><a class="icon rooms" href="projects.html"><span>SERVICES AND ACTIVITIES</span></a></li>
-					<li class="nav-item"><a class="icon dining" href="events.html"><span>UNIVERSITY PROGRAMS AND ACTIVITIES IN CHINA</span></a></li>
-					<li class="nav-item"><a class="icon events" href="newsletters.html"><span>CURRENT STUDENTS
-AND PARENTS</span></a></li>
-					<li class="nav-item"><a class=" attractions" href="calendar.html"><span>PROSPECTIVE STUDENTS
-AND PARENTS</span></a></li>
-					<li class="nav-item"><a class="icon at<icon></icon>tractions" href="involved.html"><span>UNIVERSITY
-FACULTY/STAFF</span></a></li>
-					<li class="nav-item"><a class="icon at<icon></icon>tractions" href="involved.html"><span>ALUMNI</span></a></li>
-					<li class="nav-item"><a class="icon at<icon></icon>tractions" href="involved.html"><span>COMPANIES</span></a></li>
+						<!-- <li class="mobile-icon nav-item"><button class="nav-toggler toggle-slide-bottom"></button></li> -->
+						<li class="nav-item about first"><a class="icon" href="about.html"><span>ABOUT US</span></a></li>
+						<li class="nav-item services"><a class="icon" href="services.html"><span>SERVICES AND ACTIVITIES</span></a></li>
+						<li class="nav-item programs"><a class="icon" href="programs.html"><span>UNIVERSITY PROGRAMS AND ACTIVITIES IN CHINA</span></a></li>
+						<li class="nav-item current"><a class="icon" href="current.html"><span>CURRENT STUDENTS
+						AND PARENTS</span></a></li>
+						<li class="nav-item prospective"><a class="icon" href="prospective.html"><span>PROSPECTIVE STUDENTS
+						AND PARENTS</span></a></li>
+						<li class="nav-item fac_staff"><a class="icon" href="fac_staff.html"><span>UNIVERSITY
+						FACULTY/STAFF</span></a></li>
+						<li class="nav-item alumni"><a class="icon" href="alumni.html"><span>ALUMNI</span></a></li>
+						<li class="nav-item companies last"><a class="icon" href="companies.html"><span>COMPANIES</span></a></li>
 			        </ul><!-- navlist -->
 			    </section><!-- layout -->
 			</nav><!-- navigation --> 
 			
-			<div id="page">
-				<div id="bannerimage"></div>
-				<section id="content">
-					
-				</section>
-			</div>
-			
-			
+			<div class="page" id="home">
+				<section class="layout">
+				    <article class="content-container">
+					   <section id="gallery-container"> 
+					      <ul class="gallery">
+					        <li>
+					        	<img class="" src="images/homeslideshow/image1.jpg" alt="">
+					        	<div class="caption"><span class="text">Alumni gathering in November 2014 where Professor Stephen Long presented</span></div>
+					        </li>
+					        <li>
+					        	<img class="" src="images/homeslideshow/image2.jpg" alt="">
+					        	<div class="caption"><span class="text">Alumni gathering in November 2014 where Professor Stephen Long presented</span></div>
+					        </li>
+					        <li>
+					        	<img class="" src="images/homeslideshow/image3.jpg" alt="">
+					        	<div class="caption"><span class="text">Alumni gathering in November 2014 where Professor Stephen Long presented</span></div>
+					        </li>
+					        <li>
+					        	<img class="" src="images/homeslideshow/image4.jpg" alt="">
+					        	<div class="caption"><span class="text">Alumni gathering in November 2014 where Professor Stephen Long presented</span></div>
+					        </li>
+					        <li>
+					        	<img class="" src="images/homeslideshow/image5.jpg" alt="Celebrating Our Sesquecentennial">
+					        	<div class="caption"><span class="text">Alumni gathering in November 2014 where Professor Stephen Long presented</span></div>
+					        </li><!-- gallery-container -->
+					      </ul><!-- gallery -->
+					   </section>
+					   <section id="main-content">The University of Illinois enjoys a long history with China, beginning in the early twentieth century.  In fact, Illinois was influential in the establishment and development of Tsinghua University in China.  Currently, the University community includes more than 5,000 Chinese students, making Illinois the top destination for Chinese students in the world, as well as one of the top three institutions in sending students to study in China.</section>
+					   <div class="pattern-stripe">
+							<img src="css/images/pattern-stripe.png">
+						</div>
+					   <section id="highlights-container">
+							<div id="highlights">
+								<img class="background" src="images/highlights/highlight-bckgrnd.jpg">
+								<section id="images-container">
+									<div class="highlight">
+										<img class="" src="images/highlights/highlight1.jpg">
+										<div class="caption"><span class="text">Engineering Dean Andreas Cangellaris and Associate Dean Martin Wong at an alumni </span></div>
+									</div>
+									<div class="highlight">
+										<img class="" src="images/highlights/highlight2.jpg">
+										<div class="caption"><span class="text">Alumni at an alumni gathering in November 2014</span></div>
+									</div>
+									<div class="highlight">
+										<img class="" src="images/highlights/highlight3.jpg">
+										<div class="caption"><span class="text">Professor Stephen Long visited Shanghai in November 2014 to present to alumni</span></div>
+									</div>
+								</section><!-- images-container -->
+							</div>
+					   </section>
+				    </article><!-- content -->
+				</section><!-- layout -->
+				<div class="push"></div>
+			</div> <!-- page -->
 		</main>
-			
-			
+		
+		<footer>
+			<section class="layout">
+				<div class="orange-stripe"></div>
+				<div id="footer-logo" class="element">
+					<img class="" src="images/footer-logo.png">
+				</div>
+				<div id="address-block" class="element">
+					330 Illini Union Bookstore <br />
+					807 South Wright Street, MC-319 <br />
+					Champaign, IL 61820
+				</div>
+				<div id="contact-block" class="element">
+					T: 217.333.9525 <br />
+					F: 217.333.9898 <br />
+					E: publicengagement@illinois.edu
+				</div>
+			</section>
+		</footer>	
 	</body>
 </html>

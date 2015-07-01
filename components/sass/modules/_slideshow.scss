@@ -1,31 +1,38 @@
-#home{
+#home.page{
 	@include clearfix;
-	.content{
-		display: table;
+	.content-container{
+		display: block;
 		text-align: center;
 		.caption{
-			font-size: 86px !important;
-			color: $light;
-			position: absolute;
-			font-family: $font-banner-text;
-			@include text-shadow($dark 2px 2px 8px);
-			margin: -30% 0 0;
-			line-height: 65px;
-			vertical-align: middle;
-			text-align: center;
+			margin: 0;
 			width: 100%;
-		}	
-		.gallery{
-			display: block;
-			max-width: 100% !important;
-			li{
+			background: $orange;
+			text-align: left;
+			padding: 2% 0 2% 3%;
+			position: relative;
+			span{
+				line-height: 35px;
+				color: $light;
+				font-family: $font-banner-text;
+				//font-size: 25px !important;
 				display: block;
-				width: 100%;
-				img{
-					min-width: 870px;
-					padding: 0;
-					position: relative;
-				}	
+				width: 80%;
+			}
+		}
+		#gallery-container {
+			.gallery{
+				display: block;
+				max-width: 100% !important;
+				li{
+					display: block;
+					width: 100%;
+					img{
+						//min-width: 670px;
+						padding: 0;
+						position: relative;
+						display: block;
+					}	
+				}
 			}
 		}
 		.centered-btns_nav{
@@ -35,10 +42,35 @@
 		}
 		.centered-btns_nav.prev{
 			right: 43px;
+		} 
+	}
+}
+ul.rslides_tabs {
+    margin-right: 2%;
+    z-index: 2;
+    width: 20%;
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+	li {
+		display: inline-block !important;
+		margin-right: 8%;
+		position: relative;
+		width: auto !important;
+		a {
+			@include background(image-url("../css/images/pager-off.png"));
+			display: block;
+			height: 12px;
+			width: 12px;
+			text-indent: -4000px;
+		}
+	}
+	li.rslides_here{
+		a {
+			@include background(image-url("../css/images/pager-on.png"));
 		}
 	}
 }
-
 // RESPONSIVE CODE
 #home{
 	.layout {
@@ -47,37 +79,47 @@
 			@include span(12 of 12 first);
 			.gallery{
 				.caption{
-					@include transition(all 0.3s ease-in-out);
-					font-size: 46px;
-					width: 348px;
-					margin-left: 10px;
-					margin-top: -45%;
+					font-size: 14px;
 				}
-				img{
-					left: -25%;
+				img{	}
+			}
+			ul.rslides_tabs {
+			    margin-right: 3%;
+			    width: 20%;
+			    position: absolute;
+			    bottom: 10px;
+				li {
+					a {
+						@include background(image-url("../css/images/pager-off-sm.png"));
+						display: block;
+						height: 6px;
+						width: 6px;
+						text-indent: -4000px;
+					}
+				}
+				li.rslides_here{
+					a {
+						@include background(image-url("../css/images/pager-on-sm.png"));
+					}
 				}
 			}
+
 		}
 		@include breakpoint(($mobile-landscape)){
 			@include show-grid(overlay);
 			@include span(12 of 12 first);
 			.gallery {	
 				.caption{
-					@include transition(all 0.3s ease-in-out);
-					font-size: 52px;
-					width: 670px;
-					margin-top: -38%;
+					font-size: 14px;
 				}
-				img{
-					left: -15%;
-				}
+				img{}
 			}
 		}
 		@include breakpoint(($tablet)){
 			@include span(12 of 12 first);
 			.gallery{
 				.caption{
-					margin-top: -30%;
+					font-size: 10px;
 				}
 			}
 		}
@@ -113,7 +155,7 @@
 .rslides img {
   display: block;
   height: auto;
-  float: left;
+  //float: left;
   width: 100%;
   border: 0;
   }

@@ -1,10 +1,12 @@
 //Add Color Palette
 $orange: #fa6300;
 $blue: #16274c;
+$light-blue: lighten($blue, 30);
+$hover-blue: lighten($blue, 20);
 $header_blue: #1f3f79;
 $dark: #000000;
 $light: #ffffff;
-$primary-text: lighten($dark, 20);
+$primary-text: #58585b;
 $lighter-text: lighten($dark, 40);
 $light-grey: lighten($dark, 90);
 
@@ -19,11 +21,13 @@ $typeDefault : $dark;
 
 $link-blue: #004c87;
 
+$main-body-text: OpenSans, serif;
 $navigation-linkfont: OpenSans, serif;
-$font-greybody-text: OpenSans, serif;
 $font-secondarypage-head-text: OpenSans-Bold, serif;
 $font-banner-text: OpenSans, serif;
+$caption-text:EBGaramond;
 
+$max-pagewidth: 1390px;
 
 // ------------------------------- LAYOUT VARIABLES ------------------------------- //
 // Susy SETUP ---------------------------------------------------------------------------
@@ -50,4 +54,4 @@ $tablet: 700px 800px;
 $desktop: 800px 1200px;
 $superdesktop: 1200px 1600px;
 $blowout: 1600px 3200px;
-$max-width: 1200px;
+$max-width: 1390px;

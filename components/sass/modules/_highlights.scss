@@ -1,0 +1,174 @@
+#highlights-container{
+	display: table;
+	width: 100%;
+	#highlights{
+		@include transition(all 3s);
+		position: relative;
+		display: table-cell;
+		img.background{
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: 1;
+		}
+		#images-container{
+			@include display-flex;
+			@include justify-content(space-around);
+			@include clearfix;
+			padding: 2% 0;
+			.highlight {
+				width: 20%;
+				float: left;
+				z-index: 2;
+				border: 3px solid $light;
+				background: url("images/caption-white.png") 0 0 repeat transparent;
+				img {
+					display: block;
+				}
+				.caption{
+					background: transparent;
+					min-height: 62px;
+					padding: 3%;
+					span {
+						color: #58585b;
+						line-height: 12px;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+// ---------------------------------------------------------------------------------------------
+// 										Repsonsive layout 
+// ---------------------------------------------------------------------------------------------
+
+#highlights-container {
+	@include breakpoint(($mobile-portrait)){
+		#highlights{
+			@include background(image-url("highlights/highlight-bckgrnd-mobile.jpg"));
+			@include clearfix;
+			position: relative;
+			display: table-cell;
+			img.background{
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 1;
+				display: none;
+			}
+			#images-container{
+				display: block;
+				@include clearfix;
+				.highlight {
+					width: 40%;
+					float: left;
+					z-index: 17;
+					margin: 10px 5% 10px 5%;
+					img {						
+					}
+					.caption {
+						span {
+							line-height: 16px;
+						}
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint(($mobile-landscape)){
+		@include background(image-url("highlights/highlight-bckgrnd-mobile.jpg"));
+		#highlights{
+			@include clearfix;
+			position: relative;
+			display: table-cell;
+			img.background{
+				position: absolute;
+				left: 0;
+				top: 0;
+				z-index: 1;
+				display: none;
+			}
+			#images-container{
+				display: block;
+				@include clearfix;
+				.highlight {
+					width: 28%;
+					float: left;
+					z-index: 17;
+					margin: 10px 10%;
+					img {						
+					}
+					.caption {
+						min-height: 55px;
+						span {
+							line-height: 14px;
+						}
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint(($tablet)){  //tablet
+		#highlights{
+			img.background{}
+			#images-container{
+				padding: 1% 0;
+				.highlight {
+					img {}
+					.caption {
+						span {
+							line-height: 18px;
+						}
+					}
+				}
+			}
+		}	
+	}
+	@include breakpoint($desktop){
+		#highlights{
+			img.background{}
+			#images-container{
+				.highlight {
+					img {}
+					.caption {
+						span {
+							line-height: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint($superdesktop){
+		#highlights{
+			img.background{}
+			#images-container{
+				.highlight {
+					img {}
+					.caption {
+						span {
+							line-height: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+	
+	@include breakpoint($max-width){
+		#highlights{
+			img.background{}
+			#images-container{
+				.highlight {
+					img {}
+					.caption {
+						span {
+							line-height: 18px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

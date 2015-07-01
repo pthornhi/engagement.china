@@ -63,6 +63,9 @@ gulp.task('compass', function() {
       image: outputDir + 'images',
       style: sassStyle,
       require: ['susy', 'breakpoint'],
+      http_path: "http://engagement.china.local/",
+      http_images_dir: "/css/images",
+      http_images_path: "http://engagement.china.local/css/images",
       debug: false,
       sourcemap: true
     })

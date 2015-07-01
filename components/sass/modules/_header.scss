@@ -1,9 +1,6 @@
 $header-height:192px;
 header{
-	max-height: $header-height;
 	#headbar{
-		height: 100%;
-		position: relative;
 		#orange-stripe{
 			@include clearfix;
 			background: $orange;
@@ -15,13 +12,16 @@ header{
 			}
 			#search-donate{
 				@include transition(all 3s);
-				height: 25px;
 				margin-top: 75px;
 				position: absolute;
-				left: 70%;
-				width: 300px;
+				left: 72%;
+				width: 320px;
 				#donate {
 					float: left;
+					img {
+						position: relative;
+						top: 3px;
+					}
 				}
 				#searchbox {
 					@include google-search;
@@ -29,14 +29,12 @@ header{
 				}
 			}
 		}
-		#pattern-stripe{
+		.pattern-stripe{
 			height: auto;
 			position: absolute;
 			bottom: 0;
-			line-height: 0;
-			img {
-				min-width: 700px;
-			}
+			background: $orange;
+			img {}
 		}
 	}
 }
@@ -48,9 +46,14 @@ header{
 	@include breakpoint((0 920px)){
 		#headbar{
 			#orange-stripe{
-				#logo-container{}
+				#logo-container{
+					img {
+						top: 14px;
+						position: relative;
+					}
+				}
 				#search-donate{
-						left: 15px;
+						left: 3%;
 						margin-top: 6px;
 						width: 100%;
 					#donate {

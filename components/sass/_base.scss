@@ -11,24 +11,34 @@
 @include border-box-sizing;
 
 head:before{content: none !important;}
+body a, body a:visited{color: $link-blue;text-decoration: none;}
+img{width: 100%;}
+
 body {
-	font-family:$font-greybody-text;
+	font-family:$main-body-text;
 	color:$primary-text;
 	font-size: 16px;
 	line-height: 160%;
-	margin:0 auto;
 	overflow-x: hidden;
-	//background: red;
+	#wrapper {
+		overflow: hidden;
+		.page{
+			background: $pageBackground;
+			.layout{
+				.content-container {
+					#gallery-container{}
+					#main-content {
+						text-align: left;
+						color: $primary-text;
+					}
+				}
+			}
+		}
 	}
-body main#container{z-index: 0;}
-body main#container .page{z-index: 0;}
-body .page{@include clearfix;position: relative;}
-body #wrapper {position: relative;z-index: 10;top: -8px;left: 0;overflow: hidden;}
-body .content{position: relative;max-width: 1200px; margin: 0 auto;}
-body a, body a:visited{color: $link-blue;text-decoration: none;}
-.page{background: $pageBackground;}
+}
+
+
 #sticky-wrapper{height: 0 !important;}
-img{width: 100%;}
 #page-title{color: $orange;}
 #{headings(1)}{font-family: $font-secondarypage-head-text;font-size: 35px;margin: 40px 0;line-height: 39px;}
 #{headings(2,2)}{font-family: $font-secondarypage-head-text;font-size: 23px;margin: 0 0 20px 0;}

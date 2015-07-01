@@ -9,28 +9,25 @@
 	}
 }
 footer{
-	color: $lighter-text;
-	height: 75px;
-	margin: -16px auto 0 auto;
-	background: $pageBackground;
+	color: $light;
+	background: $blue;
+	@include clearfix;
 	.layout{
-		max-width: $max-width;
-		margin: -16px auto 0 auto;
-		.elements{
-			@include display-flex(inline-flex);
-			@include justify-content(center);
-			width: 100%;
-			padding-top: 45px;
-			.element{
-				font-size: 12px;
-				border-right: 1px solid $lighter-text;
-				padding-right: 2%;
-				margin-left: 2%;
-				height: 15px;
-				line-height: 17px;
-				&.last{
-					border: 0;
-				}
+		.orange-stripe{
+			height: 25px;
+			background: $orange;
+		}
+		.element{
+			width: 25%;
+			float: left;
+			padding: 45px 0;
+			font-size: 14px;
+			border-right: 1px solid $lighter-text;
+			padding-right: 2%;
+			margin-left: 2%;
+			line-height: 21px;
+			&.last{
+				border: 0;
 			}
 		}
 	}
@@ -40,44 +37,66 @@ footer{
 
 footer{
 	@include breakpoint(($mobile-portrait)){
-		height: 60px;
-		.layout .elements{
-			padding-top: 30px;
+		.layout{
 			.element{
 				height: auto !important;
-				&.address{
-					display: none;
+				padding-top: 10px;
+				line-height: 10px;
+				&#footer-logo{
+					width: 15%;
+					background: transparent url("../images/footer-logo-sm.png") no-repeat scroll 0px 10px;
+					height: 87px !important;
+					padding-top: 0px;
+					padding-bottom: 0;
+					img {
+						display: none;
+					}
+				}
+				&#address-block{
+					width: 37%;
+				}
+				&#contact-block{
+					width: 37%;
 				}
 			}
 		}
 	}
 	@include breakpoint(($mobile-landscape)){
-		height: 40px;
-		.layout .elements{
-			padding-top: 20px;
+		.layout{
 			.element{
 				height: auto !important;
-				&.address{
-					display: none;
-				}
+				&#footer-logo{}
+				&#address-block{}
+				&#contact-block{}
 			}
 		}
 	}
 	@include breakpoint(($tablet)){  //tablet
-		height: 110px;
-		.elements{
+		.layout{
 			.element{
 				height: auto !important;
-				&.address{
-					display: none;
-				}
+				line-height: 15px;
+				&#footer-logo{}
+				&#address-block{}
+				&#contact-block{}
 			}
 		}
 	}
 	@include breakpoint($desktop){
-		.elements{
+		.layout{
 			.element{
-				font-size: .8vw;
+				&#footer-logo{}
+				&#address-block{}
+				&#contact-block{}
+			}
+		}
+	}
+	@include breakpoint($superdesktop){
+		.layout{
+			.element{
+				&#footer-logo{}
+				&#address-block{}
+				&#contact-block{}
 			}
 		}
 	}
