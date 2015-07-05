@@ -545,7 +545,7 @@ $(document).ready(function ($) {
 				$('footer .element').flowtype({
 					minFont : 8,
 					maxFont : 16,
-					fontRatio : 17
+					fontRatio : 16
 				});
 			}
 			//control font-size in left-col caption
@@ -635,6 +635,11 @@ $(document).ready(function ($) {
 			if(togglePushTop){
 				togglePushTop.addEventListener( 'click', function(){
 					classie.add( body, 'pmt-open' );
+					$('main#wrapper').animate({
+					    marginTop: '239',
+					  }, 500, function() {
+					    // Animation complete.
+					  });
 					document.body.appendChild(mask);
 					activeNav = 'pmt-open';
 				} );
@@ -662,6 +667,12 @@ $(document).ready(function ($) {
 				el.addEventListener( 'click', function(){
 					$('.close-menu').toggle();
 					classie.remove( body, activeNav );
+					/* $('main#wrapper').animate({
+					    top: "0",
+					  }, 690, function() {
+					    // Animation complete.
+					  }); */
+					  $('main#wrapper').css('margin-top', '0');
 					activeNav = '';
 					document.body.removeChild(mask);
 				} );

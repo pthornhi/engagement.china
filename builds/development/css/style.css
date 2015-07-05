@@ -386,6 +386,17 @@ header #headbar #orange-stripe #logo-container {
   float: left;
   margin-left: 3%;
 }
+header #headbar #orange-stripe #logo-container a {
+  display: block;
+  float: left;
+}
+header #headbar #orange-stripe #logo-container a#uofi {
+  width: 6%;
+  margin-right: 1%;
+}
+header #headbar #orange-stripe #logo-container a#china {
+  width: 93%;
+}
 header #headbar #orange-stripe #search-donate {
   -moz-transition: all 3s;
   -o-transition: all 3s;
@@ -401,7 +412,7 @@ header #headbar #orange-stripe #search-donate #donate {
 }
 header #headbar #orange-stripe #search-donate #donate img {
   position: relative;
-  top: 3px;
+  top: 4px;
 }
 header #headbar #orange-stripe #search-donate #searchbox {
   width: 180px;
@@ -430,7 +441,7 @@ header #headbar #orange-stripe #search-donate #searchbox .gsc-search-button inpu
   position: relative  !important;
   left: -3px  !important;
   height: 25px !important;
-  top: 3px;
+  top: 4px;
 }
 header #headbar #orange-stripe #search-donate #searchbox .gsc-search-box-tools .gsc-search-box .gsc-input {
   padding-right: 0 !important;
@@ -461,6 +472,18 @@ header #headbar .pattern-stripe {
   header #headbar #orange-stripe #search-donate #searchbox {
     float: right;
     margin-right: 5%;
+  }
+}
+
+header {
+  z-index: 0;
+}
+@media (min-width: 0px) and (max-width: 530px) {
+  header #headbar #orange-stripe #logo-container a#china {
+    width: 82%;
+  }
+  header #headbar #orange-stripe #logo-container a#china img {
+    top: 20px;
   }
 }
 
@@ -539,15 +562,16 @@ nav .layout .logo-item:after {
 .mobile-icon button {
   cursor: pointer;
   position: absolute;
-  top: 0px;
-  right: 0;
-  background: url("/css/images/mobile-menu-icon.png") no-repeat 0 0 transparent;
+  top: 3px;
+  right: -6px;
+  background: transparent;
   height: 40px;
   width: 50px;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
   border: none;
+  opacity: .7;
 }
 .mobile-icon button:focus {
   outline: none;
@@ -560,7 +584,8 @@ nav .layout .logo-item:after {
   display: block;
 }
 .slide-menu .mobile-icon .close-menu {
-  background: url("/css/images/mobile-menu-icon-close.png") no-repeat 0 0 transparent;
+  background: transparent;
+  top: 6px;
 }
 
 .mask {
@@ -603,7 +628,7 @@ nav.slide-menu #mobile-nav-logo img {
 nav.slide-menu ul {
   list-style-type: none;
   margin: 0px;
-  margin-top: 72px;
+  margin-top: 0;
   padding: 0;
 }
 nav.slide-menu ul li {
@@ -612,6 +637,7 @@ nav.slide-menu ul li {
   vertical-align: middle;
   text-align: left;
   border-bottom: 1px solid;
+  display: none;
 }
 nav.slide-menu ul li a {
   display: block;
@@ -623,10 +649,11 @@ nav.slide-menu ul li a {
 nav.slide-menu ul li.mobile-icon {
   height: 0;
   border-bottom: none;
+  display: block;
 }
 nav.push-menu-top {
-  top: 50px;
-  height: 72px;
+  top: 108px;
+  height: 48px;
   position: absolute;
   background: transparent;
 }
@@ -640,9 +667,16 @@ nav.slide-menu-bottom button.close-menu, nav.push-menu-top button.close-menu {
   margin: 0;
   padding: 0 10px;
 }
+nav .toggle-push-top {
+  padding: 0 10px;
+}
+nav .toggle-push-top img {
+  position: relative;
+  top: -2px;
+}
 
 body.pmt-open nav.push-menu-top {
-  top: 50px;
+  top: 108px;
 }
 
 body.smb-open nav.slide-menu-bottom {
@@ -652,12 +686,8 @@ body.smb-open nav.slide-menu-bottom {
 body.pmt-open nav.push-menu-top {
   height: 315px;
 }
-body.pmt-open #wrapper {
-  -moz-transition-duration: 0.75s;
-  -o-transition-duration: 0.75s;
-  -webkit-transition-duration: 0.75s;
-  transition-duration: 0.75s;
-  top: 205px;
+body.pmt-open nav.push-menu-top ul li {
+  display: block;
 }
 body.pmt-open button.toggle-push-top {
   display: none;
@@ -1273,6 +1303,13 @@ body.home #wrapper .page .layout {
   }
 }
 
+#imagebanner {
+  -moz-transition: all 3s;
+  -o-transition: all 3s;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
 #timeline footer .elements {
   display: block;
 }
@@ -1316,10 +1353,10 @@ footer .layout .element.last {
   footer .layout .element {
     height: auto !important;
     padding-top: 10px;
-    line-height: 10px;
+    line-height: 13px;
   }
   footer .layout .element#footer-logo {
-    width: 15%;
+    width: 12%;
     background: transparent url("../images/footer-logo-sm.png") no-repeat scroll 0px 10px;
     height: 87px !important;
     padding-top: 0px;
@@ -1329,10 +1366,10 @@ footer .layout .element.last {
     display: none;
   }
   footer .layout .element#address-block {
-    width: 37%;
+    width: 40%;
   }
   footer .layout .element#contact-block {
-    width: 37%;
+    width: 41%;
   }
 }
 @media (min-width: 530px) and (max-width: 700px) {
@@ -1419,6 +1456,19 @@ body #home.page .content {
   float: left;
   margin-right: 5%;
   width: 20%;
+}
+
+@media (min-width: 0px) and (max-width: 530px) {
+  .employees:before, .employees:after {
+    content: '';
+    display: table;
+  }
+  .employees:after {
+    clear: both;
+  }
+  .employees .head-shot {
+    width: 40%;
+  }
 }
 
 #social {

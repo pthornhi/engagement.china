@@ -13,3 +13,23 @@
 		}
 	}
 }
+
+// RESPONSIVE LAYOUT --------------------------------------------------------------
+	.employees{
+		@include breakpoint($mobile-portrait){
+		@include clearfix;
+		.head-shot{
+			width: 40%;
+			img {
+				
+			}
+			.caption{
+				
+			}
+		}
+	}
+	@include breakpoint($mobile-landscape){}
+	@include breakpoint($tablet){}
+	@include breakpoint($desktop){}
+	@include breakpoint($superdesktop){}
+}

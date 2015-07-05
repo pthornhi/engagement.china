@@ -9,6 +9,20 @@ header{
 				min-width: 450px;
 				float: left;
 				margin-left: 3%;
+				a {
+					display: block;
+					float:left;
+					img {}
+				}
+				a#uofi {
+					width: 6%;
+					margin-right: 1%;
+					img {}
+				}
+				a#china {
+					width: 93%;
+					img {}
+				}
 			}
 			#search-donate{
 				@include transition(all 3s);
@@ -20,7 +34,7 @@ header{
 					float: left;
 					img {
 						position: relative;
-						top: 3px;
+						top: 4px;
 					}
 				}
 				#searchbox {
@@ -70,4 +84,45 @@ header{
 			}
 		}
 	}
+}
+// RESPONSIVE LAYOUT --------------------------------------------------------------
+
+header{
+	z-index: 0;
+	@include breakpoint($mobile-portrait){
+		#headbar{
+			#orange-stripe{
+				#logo-container{
+					img {}
+					a#uofi {
+						img {}
+					}
+					a#china {
+						width: 82%;
+						img {
+							top: 20px;
+						}
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint($mobile-landscape){
+		#headbar{
+			#orange-stripe{
+				#logo-container{
+					img {}
+					a#uofi {
+						img {}
+					}
+					a#china {
+						img {}
+					}
+				}
+			}
+		}
+	}
+	@include breakpoint($tablet){}
+	@include breakpoint($desktop){}
+	@include breakpoint($superdesktop){}
 }

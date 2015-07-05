@@ -1,3 +1,6 @@
+$slide-menu-height: 315px;
+$header-height: 48px;
+$margin-top-height: 60px;
 // the selected and hover state setup
 .about .nav-item.about, .alumni .nav-item.alumni, .companies .nav-item.companies, .current .nav-item.current,
 .fac_staff .nav-item.fac_staff, .programs .nav-item.programs, .prospective .nav-item.prospective, .services .nav-item.services{
@@ -65,15 +68,17 @@ nav{
 	button{
 		cursor:pointer;
 		position:absolute;
-		top: 0px;
-		right: 0;
-		background:url('/css/images/mobile-menu-icon.png') no-repeat 0 0 transparent;
+		top: 3px;
+		right: -6px;
+		//background:url('/css/images/mobile-menu-icon.png') no-repeat 0 0 transparent;
+		background: transparent;
 		height: 40px;
 		width: 50px;
 		border-radius: 5px;
 		-webkit-border-radius: 5px;
 		-moz-border-radius: 5px;
 		border: none;
+		opacity: .7;
 		&:focus {	
     		outline: none
     	}
@@ -85,7 +90,9 @@ nav{
 		//visibility: hidden;
 		display: block;
 		.close-menu {
-			background:url('/css/images/mobile-menu-icon-close.png') no-repeat 0 0 transparent;
+			//background:url('/css/images/mobile-menu-icon-close.png') no-repeat 0 0 transparent;
+			background: transparent;
+			top: 6px;
 		}
 	}
 }
@@ -105,9 +112,6 @@ nav{
 |* Menus
 |* ------------------------------------------------------------ *|
 \* ------------------------------------------------------------ */
-$slide-menu-height: 315px;
-$header-height: 50px;
-$margin-top-height: 72px;
 nav {
 	&.slide-menu {
 		position: fixed;
@@ -129,7 +133,7 @@ nav {
 		ul {
 		    list-style-type: none;
 		    margin: 0px;
-		    margin-top: $margin-top-height;
+		    margin-top: 0;
 		    padding: 0;
 		    li{
 			    background: #2d3f5f;
@@ -137,6 +141,7 @@ nav {
 			    vertical-align: middle;
 			    text-align: left;
 			    border-bottom: 1px solid;
+			    display: none;
 				a {
 					display: block;
 					font-weight: 300;
@@ -147,13 +152,14 @@ nav {
 				&.mobile-icon{
 					height: 0;
 					border-bottom: none;
+					display: block;
 				}
 			}
 		}
 	}
 	&.push-menu-top {
-	    top: $header-height;
-	    height: $margin-top-height;
+	    top: 108px;
+	    height: $header-height;
 	    position: absolute;
 	    background: transparent;
 	}
@@ -168,11 +174,19 @@ nav {
 	    margin: 0;
 	    padding: 0 10px;
 	}
+	.toggle-push-top{
+		padding: 0 10px;
+		img {
+			position: relative;
+			top: -2px;
+		}
+	}
 }
 
 
 body.pmt-open nav.push-menu-top {
-    top: $header-height;
+    //top: $header-height;
+    top: 108px;
 }
 body.smb-open nav.slide-menu-bottom{
     bottom: 0;
@@ -180,10 +194,12 @@ body.smb-open nav.slide-menu-bottom{
 body.pmt-open {
 	nav.push-menu-top {
 		height: $slide-menu-height;
+		ul li {
+			display: block;
+		}
 	}
 	#wrapper{
-		@include transition-duration(.75s);
-		top: ($slide-menu-height)-110;
+		//top: ($slide-menu-height)-78; // using navigation animation here... If you turn off nav, then uncomment this line
 	}
 	button {
 		&.toggle-push-top{
