@@ -539,7 +539,6 @@ $(document).ready(function ($) {
 					maxFont : 16,
 					fontRatio : 17
 				});
-				//$( ".rslides_tabs" ).appendTo( ".caption" );
 			}
 			//control font-size in footer elements
 			if(($('footer .element').length > 0) && (typeof $.fn.flowtype !== 'undefined')){
@@ -548,10 +547,25 @@ $(document).ready(function ($) {
 					maxFont : 16,
 					fontRatio : 17
 				});
-				//$( ".rslides_tabs" ).appendTo( ".caption" );
+			}
+			//control font-size in left-col caption
+			if(($('.left-col .caption').length > 0) && (typeof $.fn.flowtype !== 'undefined')){
+				$('.left-col .caption').flowtype({
+					minFont : 8,
+					maxFont : 12,
+					fontRatio : 20
+				});
+			}
+			//control font-size in left-col lists
+			if(($('.left-col li').length > 0) && (typeof $.fn.flowtype !== 'undefined')){
+				$('.left-col li').flowtype({
+					minFont : 8,
+					maxFont : 14,
+					fontRatio : 20
+				});
 			}
 			//make sticky nav
-			$('#sticky').sticky({topSpacing:0});
+			//$('#sticky').sticky({topSpacing:0});
 			 /**
 			 * The nav stuff
 			 */

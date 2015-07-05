@@ -15,7 +15,7 @@
 			@include display-flex;
 			@include justify-content(space-around);
 			@include clearfix;
-			padding: 2% 0;
+			padding: 3% 0;
 			.highlight {
 				width: 20%;
 				float: left;
@@ -60,6 +60,7 @@
 			#images-container{
 				display: block;
 				@include clearfix;
+				padding: 2% 0;
 				.highlight {
 					width: 40%;
 					float: left;
@@ -92,6 +93,7 @@
 			#images-container{
 				display: block;
 				@include clearfix;
+				padding: 2% 0;
 				.highlight {
 					width: 28%;
 					float: left;

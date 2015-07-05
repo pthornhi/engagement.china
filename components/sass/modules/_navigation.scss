@@ -1,10 +1,13 @@
 // the selected and hover state setup
-.about .about, .alumni .alumni, .companies .companies, .current .current,
-.fac_staff .fac_staff, .programs .programs, .prospective .prospective, .services .services{
+.about .nav-item.about, .alumni .nav-item.alumni, .companies .nav-item.companies, .current .nav-item.current,
+.fac_staff .nav-item.fac_staff, .programs .nav-item.programs, .prospective .nav-item.prospective, .services .nav-item.services{
 	background: $light-blue;
 }
 nav .nav-item:hover{
 	background: $hover-blue;
+	a {
+		text-decoration: none;
+	}
 }
 nav{
 	font-family: $navigation-linkfont;
@@ -13,7 +16,8 @@ nav{
 		padding: 0;
 		margin: 0;	
 		.navlist{
-			@include display-flex;
+			//@include display-flex;
+			display: table;
 			padding: 0;
 			height: auto;
 			@include justify-content(space-around);
@@ -30,7 +34,7 @@ nav{
 					text-decoration: none;
 					line-height: 14px;
 					&:hover{
-						text-decoration: underline;
+						text-decoration: none;
 					}
 					span{
 						display: block;
@@ -61,7 +65,7 @@ nav{
 	button{
 		cursor:pointer;
 		position:absolute;
-		top: 15px;
+		top: 0px;
 		right: 0;
 		background:url('/css/images/mobile-menu-icon.png') no-repeat 0 0 transparent;
 		height: 40px;
@@ -76,6 +80,7 @@ nav{
 	}
 }
 .slide-menu{
+	display: inline-block;
 	.mobile-icon {
 		//visibility: hidden;
 		display: block;
@@ -92,15 +97,17 @@ nav{
     z-index: 15;
     width: 100%;
     height: 100%;
-   // background: rgba(0, 0, 0, 0.8);
+	background: rgba(0, 0, 0, 0.8);
+	display: none;
 }
 /* ------------------------------------------------------------ *\
 |* ------------------------------------------------------------ *|
 |* Menus
 |* ------------------------------------------------------------ *|
 \* ------------------------------------------------------------ */
-$slide-menu-height: 236px;
-
+$slide-menu-height: 315px;
+$header-height: 50px;
+$margin-top-height: 72px;
 nav {
 	&.slide-menu {
 		position: fixed;
@@ -121,7 +128,8 @@ nav {
 		}
 		ul {
 		    list-style-type: none;
-		    margin: 0;
+		    margin: 0px;
+		    margin-top: $margin-top-height;
 		    padding: 0;
 		    li{
 			    background: #2d3f5f;
@@ -145,11 +153,12 @@ nav {
 	}
 	&.push-menu-top {
 	    top: $header-height;
-	    height: 88px;
+	    height: $margin-top-height;
 	    position: absolute;
+	    background: transparent;
 	}
 	&.slide-menu-bottom {
-	    bottom: ($slide-menu-height*-1)+80;
+	    top: ($slide-menu-height*-1);
 	    height: $slide-menu-height;
 	}
 	&.slide-menu-bottom button.close-menu,

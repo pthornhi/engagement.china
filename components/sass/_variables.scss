@@ -1,5 +1,6 @@
 //Add Color Palette
 $orange: #fa6300;
+$light-orange: lighten($orange, 20);
 $blue: #16274c;
 $light-blue: lighten($blue, 30);
 $hover-blue: lighten($blue, 20);
@@ -8,6 +9,7 @@ $dark: #000000;
 $light: #ffffff;
 $primary-text: #58585b;
 $lighter-text: lighten($dark, 40);
+$grey: lighten($dark, 50);
 $light-grey: lighten($dark, 90);
 
 $navBackground : $blue;
@@ -25,6 +27,7 @@ $main-body-text: OpenSans, serif;
 $navigation-linkfont: OpenSans, serif;
 $font-secondarypage-head-text: OpenSans-Bold, serif;
 $font-banner-text: OpenSans, serif;
+$font-pagetitle: EBGaramond;
 $caption-text:EBGaramond;
 
 $max-pagewidth: 1390px;

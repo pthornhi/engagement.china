@@ -17,12 +17,15 @@ footer{
 			height: 25px;
 			background: $orange;
 		}
+		.blue-stripe{
+			height: 40px;
+			background: $blue;
+			border-bottom: 1px solid $grey;
+		}
 		.element{
 			width: 25%;
 			float: left;
-			padding: 45px 0;
-			font-size: 14px;
-			border-right: 1px solid $lighter-text;
+			padding: 20px 2% 35px 0;
 			padding-right: 2%;
 			margin-left: 2%;
 			line-height: 21px;
@@ -64,6 +67,7 @@ footer{
 	@include breakpoint(($mobile-landscape)){
 		.layout{
 			.element{
+				width: 30%;
 				height: auto !important;
 				&#footer-logo{}
 				&#address-block{}
@@ -74,6 +78,7 @@ footer{
 	@include breakpoint(($tablet)){  //tablet
 		.layout{
 			.element{
+				width: 30%;
 				height: auto !important;
 				line-height: 15px;
 				&#footer-logo{}

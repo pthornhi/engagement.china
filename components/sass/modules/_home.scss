@@ -1,5 +1,8 @@
-
-.homepage .sticky {
+body.home #wrapper .page .layout,
+body.home #wrapper .page .layout .content-container{
+	margin: 0;
+}
+.home.page .sticky {
 	position: fixed;
     bottom: 0;
     z-index: 2;
@@ -8,6 +11,7 @@
 body #home.page{
 	padding: 0;
 	max-width: 100%;
+	margin-bottom: 0;
 	.content{
 		max-width: 100%;
 		width: 100%;

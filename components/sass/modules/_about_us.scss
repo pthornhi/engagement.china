@@ -1,0 +1,15 @@
+.employees{
+	@include clearfix;
+	width: 100%;
+	.head-shot{
+		float: left;
+		margin-right: 5%;
+		width: 20%;
+		img {
+			
+		}
+		.caption{
+			
+		}
+	}
+}

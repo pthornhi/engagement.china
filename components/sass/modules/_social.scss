@@ -1,0 +1,45 @@
+#social{
+	@include clearfix;
+	float: right;
+	width: auto;
+	margin-right: 5%;
+	position: relative;
+	top: 10%;
+	a {
+		float: left;
+		width: 24%;
+		max-width: 32px;
+		margin: 2% 9% 0px 0px;
+		img {
+			
+		}
+	}
+	a.last{
+		margin-right: 0;
+	}
+	#twitter {
+		img {
+			
+		}	
+	}
+	#facebook {
+		img {
+			
+		}	
+	}
+	#twitter {
+		img {
+			
+		}
+	}
+}
+
+// RESPONSIVE LAYOUT --------------------------------------------------------------
+
+#social{
+	@include breakpoint($mobile-portrait){}
+	@include breakpoint($mobile-landscape){}
+	@include breakpoint($tablet){}
+	@include breakpoint($desktop){}
+	@include breakpoint($superdesktop){}
+}

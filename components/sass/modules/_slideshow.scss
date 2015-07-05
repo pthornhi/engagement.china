@@ -23,9 +23,11 @@
 			.gallery{
 				display: block;
 				max-width: 100% !important;
+				margin: 0;
 				li{
 					display: block;
 					width: 100%;
+					padding: 0;
 					img{
 						//min-width: 670px;
 						padding: 0;
@@ -45,7 +47,7 @@
 		} 
 	}
 }
-ul.rslides_tabs {
+body #wrapper .page .layout ul.rslides_tabs {
     margin-right: 2%;
     z-index: 2;
     width: 20%;
@@ -57,6 +59,7 @@ ul.rslides_tabs {
 		margin-right: 8%;
 		position: relative;
 		width: auto !important;
+	    padding-left: 0;
 		a {
 			@include background(image-url("../css/images/pager-off.png"));
 			display: block;
@@ -72,7 +75,7 @@ ul.rslides_tabs {
 	}
 }
 // RESPONSIVE CODE
-#home{
+body.home #wrapper .page {
 	.layout {
 		padding: 0 !important;
 		@include breakpoint(($mobile-portrait)){
@@ -90,7 +93,7 @@ ul.rslides_tabs {
 			    bottom: 10px;
 				li {
 					a {
-						@include background(image-url("../css/images/pager-off-sm.png"));
+						background: url('images/pager-off-sm.png') 0 0 no-repeat transparent !important;
 						display: block;
 						height: 6px;
 						width: 6px;
@@ -99,7 +102,7 @@ ul.rslides_tabs {
 				}
 				li.rslides_here{
 					a {
-						@include background(image-url("../css/images/pager-on-sm.png"));
+						background: url('images/pager-on-sm.png') 0 0 no-repeat transparent !important;
 					}
 				}
 			}
