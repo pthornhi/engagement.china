@@ -1,15 +1,13 @@
-#social{
+#social-block{
 	@include clearfix;
-	float: right;
-	width: auto;
-	margin-right: 5%;
-	position: relative;
-	top: 10%;
+
 	a {
 		float: left;
-		width: 24%;
-		max-width: 32px;
 		margin: 2% 9% 0px 0px;
+		display: block;
+		background: url('images/social-media-icons-sprite.jpg') 0 0 no-repeat transparent;
+		height: 16px;
+		width: 16px;
 		img {
 			
 		}
@@ -18,19 +16,25 @@
 		margin-right: 0;
 	}
 	#twitter {
+		background-position: -7px -5px;
 		img {
 			
 		}	
 	}
 	#facebook {
+		background-position: -40px -5px;
 		img {
 			
 		}	
 	}
-	#twitter {
+	#linkedin {
+		background-position: -82px -5px;
 		img {
 			
 		}
+	}
+	#youtube {
+		background-position: -122px -4px;
 	}
 }
 

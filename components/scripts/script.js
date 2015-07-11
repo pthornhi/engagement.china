@@ -30,8 +30,8 @@ $(document).ready(function ($) {
 				if(($('.gallery .caption').length > 0) && (typeof $.fn.flowtype !== 'undefined')){
 					$('.gallery .caption span').flowtype({
 						minFont : 8,
-						maxFont : 28,
-						fontRatio : 17
+						maxFont : 19,
+						fontRatio : 20
 					});
 					//$( ".rslides_tabs" ).appendTo( ".caption" );
 				}
@@ -40,15 +40,15 @@ $(document).ready(function ($) {
 			if(($('.highlight .caption').length > 0) && (typeof $.fn.flowtype !== 'undefined')){
 				$('.highlight .caption span').flowtype({
 					minFont : 8,
-					maxFont : 16,
-					fontRatio : 17
+					maxFont : 11,
+					fontRatio : 15
 				});
 			}
 			//control font-size in footer elements
 			if(($('footer .element').length > 0) && (typeof $.fn.flowtype !== 'undefined')){
 				$('footer .element').flowtype({
 					minFont : 8,
-					maxFont : 16,
+					maxFont : 12,
 					fontRatio : 16
 				});
 			}
@@ -140,7 +140,7 @@ $(document).ready(function ($) {
 				togglePushTop.addEventListener( 'click', function(){
 					classie.add( body, 'pmt-open' );
 					$('main#wrapper').animate({
-					    marginTop: '239',
+					    marginTop: '263',
 					  }, 500, function() {
 					    // Animation complete.
 					  });

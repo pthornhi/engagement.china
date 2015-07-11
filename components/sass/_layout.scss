@@ -43,8 +43,9 @@ body {
 			position: relative;
 			z-index: 0;
 			margin-bottom: 10%;
+			padding: 0 10%;
 			.layout{
-				margin-top:10%;
+				margin-top:5%;
 				.content-container {
 					margin: 5% auto;
 					position: relative;
@@ -53,7 +54,7 @@ body {
 					}
 					#main-content {
 						max-width: 1390px;
-						margin: 20px auto 7% auto;
+						margin: 30px auto 7% auto;
 						padding: 0 10%;
 					}
 				}
@@ -92,7 +93,6 @@ body #wrapper {
 
 	}
 	.page{
-		padding: 0 5%;
 		.layout {
 			@include container;
 			//padding: 0 6% ;

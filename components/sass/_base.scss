@@ -9,7 +9,9 @@
 }
 @import url('http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css');
 @include border-box-sizing;
-
+.responsive-break {
+	display: none;
+}
 head{
 	&:before{
 		content: none !important;
@@ -17,6 +19,9 @@ head{
 }
 img {
 	width: 100%;
+}
+.info-header{
+	font-weight: bold;
 }
 body {
 	font-family:$main-body-text;

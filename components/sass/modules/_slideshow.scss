@@ -11,12 +11,13 @@
 			padding: 2% 0 2% 3%;
 			position: relative;
 			span{
-				line-height: 35px;
+				line-height: 17px;
 				color: $light;
-				font-family: $font-banner-text;
+				font-family: $caption-text;
 				//font-size: 25px !important;
 				display: block;
 				width: 80%;
+				margin-left: 7%;
 			}
 		}
 		#gallery-container {
@@ -28,6 +29,7 @@
 					display: block;
 					width: 100%;
 					padding: 0;
+					margin: 0;
 					img{
 						//min-width: 670px;
 						padding: 0;
@@ -53,13 +55,15 @@ body #wrapper .page .layout ul.rslides_tabs {
     width: 20%;
     position: absolute;
     right: 0px;
-    bottom: 0px;
+    bottom: 6%;
+    line-height: 0;
 	li {
 		display: inline-block !important;
 		margin-right: 8%;
 		position: relative;
 		width: auto !important;
 	    padding-left: 0;
+	    margin-bottom: 0;
 		a {
 			@include background(image-url("../css/images/pager-off.png"));
 			display: block;
@@ -74,7 +78,7 @@ body #wrapper .page .layout ul.rslides_tabs {
 		}
 	}
 }
-// RESPONSIVE CODE
+// RESPONSIVE CODE  --------------------------------------------------------------
 body.home #wrapper .page {
 	.layout {
 		padding: 0 !important;
@@ -82,15 +86,16 @@ body.home #wrapper .page {
 			@include span(12 of 12 first);
 			.gallery{
 				.caption{
-					font-size: 14px;
+					span {
+						line-height: 18px;
+					}
 				}
 				img{	}
 			}
 			ul.rslides_tabs {
-			    margin-right: 3%;
+			    margin-right: -2%;
 			    width: 20%;
 			    position: absolute;
-			    bottom: 10px;
 				li {
 					a {
 						background: url('images/pager-off-sm.png') 0 0 no-repeat transparent !important;
@@ -112,18 +117,43 @@ body.home #wrapper .page {
 			@include show-grid(overlay);
 			@include span(12 of 12 first);
 			.gallery {	
-				.caption{
-					font-size: 14px;
+				.caption span{
+					line-height: 20px;
 				}
 				img{}
+			}
+			#gallery-container{
+				ul.rslides_tabs {
+				    margin-right: -2%;
+				    width: 20%;
+				    position: absolute;
+				    bottom: 11%;
+					li {
+						a {
+							background: url('images/pager-off-sm.png') 0 0 no-repeat transparent !important;
+							display: block;
+							height: 6px;
+							width: 6px;
+							text-indent: -4000px;
+						}
+					}
+					li.rslides_here{
+						a {
+							background: url('images/pager-on-sm.png') 0 0 no-repeat transparent !important;
+						}
+					}
+				}
 			}
 		}
 		@include breakpoint(($tablet)){
 			@include span(12 of 12 first);
 			.gallery{
-				.caption{
-					font-size: 10px;
-				}
+				.caption{}
+			}
+		}
+		@include breakpoint(($desktop)){
+			.gallery{
+				.caption{}
 			}
 		}
 	}
