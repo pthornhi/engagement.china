@@ -15,9 +15,9 @@
 			@include display-flex;
 			@include justify-content(space-around);
 			@include clearfix;
-			padding: 3% 0;
+			padding: 2% 0;
 			.highlight {
-				width: 20%;
+				width: 24.5%;
 				float: left;
 				z-index: 2;
 				border: 3px solid $light;
@@ -34,6 +34,7 @@
 						line-height: 12px;
 						width: 100%;
 						margin-left: 3%;
+						font-family: $highlight-caption-text;
 					}
 				}
 			}
@@ -67,9 +68,8 @@
 					float: left;
 					z-index: 17;
 					margin: 10px 5% 10px 5%;
-					img {						
-					}
 					.caption {
+						min-height: 58px !important;
 						span {
 							line-height: 16px;
 						}
@@ -100,10 +100,7 @@
 					float: left;
 					z-index: 17;
 					margin: 10px 10%;
-					img {						
-					}
 					.caption {
-						min-height: 55px;
 						span {
 							line-height: 14px;
 						}
@@ -116,7 +113,7 @@
 		#highlights{
 			img.background{}
 			#images-container{
-				padding: 1% 0;
+				padding: 2% 0;
 				.highlight {
 					img {}
 					.caption {

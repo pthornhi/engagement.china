@@ -40,7 +40,7 @@ $(document).ready(function ($) {
 			if(($('.highlight .caption').length > 0) && (typeof $.fn.flowtype !== 'undefined')){
 				$('.highlight .caption span').flowtype({
 					minFont : 8,
-					maxFont : 11,
+					maxFont : 12,
 					fontRatio : 15
 				});
 			}

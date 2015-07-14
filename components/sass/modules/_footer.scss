@@ -36,16 +36,17 @@ footer{
 		.element{
 			width: 23%;
 			float: left;
-			padding: 20px 2% 35px 0;
-			padding-right: 2%;
+			padding: 20px 0 0 0;
 			margin-left: 0;
 			line-height: 21px;
+			margin-right: 0;
 			&.last{
 				border: 0;
 			}
 		}
 		#footer-logo{
 			margin-left: 10%;
+			margin-right: 5%;
 		}
 		#social-block{
 			display: none;
@@ -72,7 +73,7 @@ footer{
 				padding-top: 10px;
 				line-height: 13px;
 				&#footer-logo{
-					width: 11%;
+					width: 14%;
 					background: transparent url("../images/footer-logo-sm.png") no-repeat scroll 0px 10px;
 					height: 87px !important;
 					padding-top: 0px;
